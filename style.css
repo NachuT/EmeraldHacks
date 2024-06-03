@@ -1,0 +1,125 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #82c475, #438f4e);
+  background-size: 200% 200%;
+  animation: gradientChange 20s ease infinite;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.instagram-logo {
+    margin-top: -15px; /* Move Instagram logo up by 10px */
+}
+.discord-logo:hover, .instagram-logo:hover {
+  transform: scale(1.2);
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #00ff00;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #009900;
+  transform: scale(1.1);
+}
+
+
+
+.pulse {
+  animation: pulse 3s infinite; /* Animation for pulsing effect */
+}
+
+.countdown {
+  font-weight: bold;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease-in-out; /* Transition for size change */
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1); /* Initial and final size */
+  }
+  50% {
+      transform: scale(1.2); /* Scale up for the pulse effect */
+  }
+}
+.register-button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: navy;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  transform: scale(1.1);
+}
+

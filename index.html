@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SilverCountdownApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald Hacks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body ng-controller="CountdownController as countdownCtrl">
+    <header>
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Schedule</li>
+                <li>Tracks</li>
+                <li>Speakers</li>
+                <li>FAQ</li>
+                <li>Judges</li>
+                <li>Sponsors</li>
+                <li>Team</li>
+                <li>Donate</li>
+                <li>
+                    <a href="https://discord.com" target="_blank">
+                        <img class="discord-logo" src="discord.png" alt="Discord" width="30" height="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank">
+                        <img class="instagram-logo" src="instagram.png" alt="Instagram" width="60" height="60">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Emerald Hacks</h1>
+        <p>March 8, 2025 @Emerald High School Theater</p>
+        <button ng-mouseover="buttonHover()" ng-mouseout="buttonOut()">Devpost</button>
+        <div class="countdown" ng-class="{ 'pulse': countdownCtrl.pulse }">Countdown: <span ng-bind="countdownCtrl.countdown"></span></div>
+        <a href="https://example.com/register" class="register-button">Register Now!</a>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
