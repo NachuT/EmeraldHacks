@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald Hacks</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Your CSS styles here */
-    </style>
 </head>
 <body ng-controller="CountdownController as countdownCtrl">
     <header>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Schedule</li>
-                <li>Tracks</li>
-                <li>Speakers</li>
-                <li>FAQ</li>
-                <li>Judges</li>
-                <li>Sponsors</li>
-                <li>Team</li>
-                <li>Donate</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#prizes">Prizes</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#donate">Donate</a></li>
                 <li>
                     <a href="https://discord.com" target="_blank">
                         <img class="discord-logo" src="discord.png" alt="Discord" width="30" height="30">
@@ -35,14 +32,49 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <h1>Emerald Hacks</h1>
-        <p>March 8, 2025 @Emerald High School Theater</p>
-        <button ng-mouseover="buttonHover()" ng-mouseout="buttonOut()">Devpost</button>
-        <div class="countdown" ng-class="{ 'pulse': countdownCtrl.pulse }">Countdown: <span ng-bind="countdownCtrl.countdown"></span></div>
-        <a href="https://example.com/register" class="register-button">Register Now!</a>
-
-    </div>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h1>Emerald Hacks</h1>
+                <p>March 8, 2025 @Emerald High School Theater</p>
+                <button ng-mouseover="buttonHover()" ng-mouseout="buttonOut()">Devpost</button>
+                <div class="countdown" ng-class="{ 'pulse': countdownCtrl.pulse }">Countdown: <span ng-bind="countdownCtrl.countdown"></span></div>
+                <a href="https://example.com/register" class="register-button">Register Now!</a>
+            </div>
+        </section>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <p>Details about the schedule will go here.</p>
+        </section>
+        <section id="tracks">
+            <h2>Tracks</h2>
+            <p>Information about different tracks available.</p>
+        </section>
+        <section id="organizers">
+            <h2>Organizers</h2>
+            <p>Meet the organizers of the event.</p>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p>Frequently Asked Questions.</p>
+        </section>
+        <section id="prizes">
+            <h2>Prizes</h2>
+            <p>Details about prizes and awards.</p>
+        </section>
+        <section id="sponsors">
+            <h2>Sponsors</h2>
+            <p>Information about sponsors.</p>
+        </section>
+        <section id="team">
+            <h2>Team</h2>
+            <p>Details about the team members.</p>
+        </section>
+        <section id="donate">
+            <h2>Donate</h2>
+            <p>Information on how to donate.</p>
+        </section>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="script.js"></script>
 </body>
